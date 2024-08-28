@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+}
+
+:root {
+	--color-primary: #f3f5fc;
+	--color-secondary: #ffffff;
+	--color-tercery: #343a40;
+	--color-cuaternary: #0a3871;
+}
+
+body {
+	background-color: var(--color-primary);
+	width: 100vh;
+}
+
+.navbar__encriptador img {
+	width: 30px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.encriptador__contenido {
+	display: flex;
+	gap: 20px;
+}
+
+.encriptador__texto textarea {
+	border: 1px solid transparent;
+	background-color: var(--color-primary);
+}
+
+.encriptador__texto textarea::placeholder {
+	color: var(--color-cuaternary);
+	font-weight: 400;
+	font-size: 2rem;
+}
+
+.encriptador__req {
+	display: flex;
+	align-items: center;
+	font-size: 0.75rem;
+	gap: 10px;
+}
+
+.encriptador__req img {
+	width: 1rem;
+}
+
+.desencriptador {
+	background-color: var(--color-secondary);
+	border: 1px solid transparent;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding: 10px 0;
+}
+
+.desencriptador__text1 {
+	text-align: center;
+	color: var(--color-tercery);
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.desencriptador__text2 {
+	text-align: center;
+	color: var(--color-tercery);
+	font-size: 1rem;
+}
